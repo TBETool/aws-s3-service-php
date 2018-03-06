@@ -1,0 +1,22 @@
+{
+    "name": "tbetool/aws-s3-service-php",
+    "type": "library",
+    "description": "Based on Amazon AWS PHP SDK. Enables using S3 services with ease.",
+    "keywords": ["amazon aws", "aws-php-sdk", "aws-sdk-php", "aws-php-service", "aws s3 service php", "the born engineer", "Anuj Sharma", "TBE", "Anuj TBE", "Amazon AWS S3 service"],
+    "homepage": "http://thebornengineer.com",
+    "authors": [
+        {
+            "name": "Anuj Sharma",
+            "email": "anuj@thebornengineer.com",
+            "homepage": "https://anujsh.gitlab.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "aws/aws-sdk-php": "^3.52"
+    },
+    "autoload": {
+        "psr-4": {"TBETool\\": "src/"}
+    }
+}
