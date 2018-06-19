@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Author Anuj Sharma <contact@anujsh.in> <http://anujsh.in>
  */
 namespace TBETool;
 
