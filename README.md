@@ -1,6 +1,11 @@
 # aws-s3-service-php
 Easy to use S3 services of Amazon AWS
 
+## Installation
+```
+composer require tbetool/aws-s3-service-php
+```
+
 ## Initialize
 ```
 $s3Service = new S3Service(S3_KEY, S3_SECRET, S3_BUCKET);
