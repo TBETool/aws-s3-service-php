@@ -263,7 +263,7 @@ class S3Service
                 'ACL' => $acl_string
             ]);
             
-            $s3Client->copyObject([
+            $S3_Client->copyObject([
                 'Bucket'     => $this->getS3Bucket(),
                 'Key'        => $key,
                 'CopySource' => $this->getS3Bucket() . '/' . $key,
