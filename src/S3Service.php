@@ -262,6 +262,14 @@ class S3Service
                 'Body' => fopen($local_file, 'rb'),
                 'ACL' => $acl_string
             ]);
+            
+            $s3Client->copyObject([
+                'Bucket'     => $this->getS3Bucket(),
+                'Key'        => $key,
+                'CopySource' => $this->getS3Bucket() . '/' . $key,
+                'ContentDisposition' => 'attachment; filename="'.basename($key).'"',
+                'MetadataDirective'  => 'REPLACE',
+            ]);
 
             return $result->toArray()['ObjectURL'];
         } catch (S3Exception $e) {
