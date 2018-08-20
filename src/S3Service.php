@@ -263,13 +263,13 @@ class S3Service
                 'ACL' => $acl_string
             ]);
             
-            $S3_Client->copyObject([
-                'Bucket'     => $this->getS3Bucket(),
-                'Key'        => $key,
-                'CopySource' => $this->getS3Bucket() . '/' . $key,
-                'ContentDisposition' => 'attachment; filename="'.basename($key).'"',
-                'MetadataDirective'  => 'REPLACE',
-            ]);
+//             $S3_Client->copyObject([
+//                 'Bucket'     => $this->getS3Bucket(),
+//                 'Key'        => $key,
+//                 'CopySource' => $this->getS3Bucket() . '/' . $key,
+//                 'ContentDisposition' => 'attachment; filename="'.basename($key).'"',
+//                 'MetadataDirective'  => 'REPLACE',
+//             ]);
 
             return $result->toArray()['ObjectURL'];
         } catch (S3Exception $e) {
